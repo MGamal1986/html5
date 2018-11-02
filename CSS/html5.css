@@ -25,9 +25,13 @@ nav ul li{display:inline-block;padding:10px}
 dialog{
     border:none;
     box-shadow: -2px -3px 3px 1px #d4d1d1;
+    -webkit-box-shadow: -2px -3px 3px 1px #d4d1d1;
     position:fixed;
+    -webkit-position:fixed;
     left:1166px;
+    -webkit-left:1166px;
     bottom:0;
+    -webkit-bottom:0;
     padding:10px;
 }
 /* end dialog */
