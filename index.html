@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML5 --!!</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <link rel="stylesheet" href="CSS/font-awesome.min.css" />
+        <link rel="stylesheet" href="CSS/html5.css" />
+    </head>
+    <body>
+        <header>
+            <h1>HTML5 training course</h1>
+            <p>this is training for <mark>html5</mark> new element</p>
+        </header>
+        <nav>
+            <ul>
+                <li>home</li>
+                <li>profile</li>
+                <li>about</li>
+                <li>contact us</li>
+                <li>sign out</li>
+            </ul>
+        </nav>
+        <dialog open>Welcome to html5 course <mark>&lt;dialog&gt;</mark> element</dialog>
+        <div class="container">
+            <section class="main">
+                <article>
+                <h3>Article NO.1</h3>
+                <p>Description of <mark>&lt;Progress&gt;</mark> element</p>
+                <div><progress max="100" value="25"></progress></div>
+                </article>
+                 <article>
+                <h3>Article NO.2</h3>
+                <p>Description of <mark>&lt;details&gt;</mark></p>
+                 <div>
+                     <details>
+                         <summary>family</summary>
+                        <li>father</li>
+                         <li>mother</li>
+                         <li>son</li>
+                         <li>daughter</li>
+                     </details>
+                 </div>
+                </article>
+                 <article>
+                <h3>Article NO.3</h3>
+                <p>Description of <mark>&lt;figure&gt;</mark> element</p>
+                 <div>
+                     <figure>
+                        <figcaption>My profile picture</figcaption>
+                         <img src="images/mohamed.jpg">
+                     </figure>
+                 </div>
+                </article>
+                 <article>
+                <h3>Article NO.4</h3>
+                <p>Description of <mark>&lt;audio&gt;</mark> element</p>
+                <div><audio controls  muted loop preload="none">
+                        <source type="audio/mpeg" src="audio/Sm3na_com_23808.mp3"/>
+                        this audio is not supported
+                     </audio>
+                 </div>
+                </article>
+                <article>
+                <h3>Article NO.5</h3>
+                <p>Description of <mark>&lt;video&gt;</mark> element</p>
+                <div>
+                    <video height="350px" width="250px" controls loop poster="images/mohamed.jpg" muted preload="auto">
+                        <source src="video/Pure%20JavaScript%20-%20Learn%20JavaScript%20By%20Building%20A%20Real-World%20Application%20From%20Scratch.mp4" type="video/mp4">
+                        this video is not supported
+                    </video>
+                    </div>
+                </article>
+                <article>
+                <h3>Article NO.5</h3>
+                <p>Description of new input field <mark>Color, Range, Number, Email, Search, URL, Time Date, Datetime, Month, Week and Tel type</mark></p>
+                <form method="get">
+                    <label>Color :</label><input type="color" value="#ef7979">
+                    <label>Range :</label><input onchange="window.l.innerHTML = this.value" type="range" min="0" max="10" value="5"><label id="l"></label>
+                    <label>Number :</label><input type="number" min="0" max="100" value="9" step="3">
+                    <label>Email :</label><input type="email" name="email">
+                    <label>Search :</label><input type="search" name="se" >
+                    <label>URL :</label><input type="url" name="link">
+                    <label>Telephone :</label><input type="tel" name="telephone">
+                    <label>Time :</label><input type="time" name="timing">
+                    <label>date :</label><input type="date" name="date">
+                    <label>datetime :</label><input type="datetime-local" name="datetime">
+                    <label>Month :</label><input type="month" name="month">
+                    <label>Week :</label><input type="week" name="week">
+                    <input type="submit" value="Display!">
+                    
+                </form>
+                </article>
+                <article>
+                <h3>Article NO.6</h3>
+                <p>Description of New Form attribute</p>
+                <form id="main-form" novalidate target="_blank">
+                    <label>Autocomplete attribute:</label>
+                    <input type="text" name="com" autocomplete="on"> 
+                    <label>Autofocus:</label>
+                    <input type="text" name="focus" autofocus required>
+                    <label>Placeholder:</label>
+                    <input id="boot" type="text" name="place" placeholder="sometext">
+                    <label>Multiple:</label>
+                    <input type="file" name="mult" multiple>
+                    <label>Read only:</label>
+                    <input type="text" name="read" value="test" readonly>
+                    <label>disabled:</label>
+                    <input type="text" name="dis" value="test" disabled>
+                    <input type="submit" value="default submit">
+                    
+                </form> 
+                    <label>Form attribute:</label>
+                    <input type="text" name="outside-form" form="main-form">
+                </article>
+                
+            </section>
+            <aside>
+                <section class="widget">
+                    <h3>widget no.1</h3>
+                    <p>description of <mark>&lt;meter&gt;</mark>element</p>
+                    <div><meter min="0" max="1" value="0.5" high="0.9" low="0.2"></meter></div>
+                </section>
+                <section class="widget">
+                    <h3>widget no.2</h3>
+                    <p>description of <mark>&lt;bdi&gt;</mark> element</p>
+                    <div>
+                        mohamed : 80 points<br/>
+                        ahmed : 60 points<br/>
+                        <bdi>مصطفى</bdi> : 120 points
+                    </div>
+                </section>
+                <section class="widget">
+                    <h3>widget no.3</h3>
+                    <p>description of <mark>&lt;datalist&gt;</mark></p>
+                    <form>
+                        <input id="choose" list="options" name="text">
+                        <datalist id="options">
+                            <option value="zamalek">
+                            <option value="ahly">
+                            <option value="petroget">
+                        </datalist>
+                        <button onclick="alert(text.value);">Choose!</button>
+                    </form>
+                </section>
+                <section class="widget">
+                    <h3>widget no.4</h3>
+                    <p>description of <mark>&lt;output&gt;</mark> element</p>
+                    <form>
+                    First NO:<br><input type="text" name="fn" autocomplete="off"><br>
+                    Second NO:<br><input type="text" name="sn" oninput="result.value=parseInt(fn.value) + parseInt(sn.value)" autocomplete="off"><br>
+                        <output name="result"></output>
+                    </form>
+                </section>
+            </aside>
+        </div>
+    <div class="clearfix"></div>
+    <footer>2018 copyright &copy; reserved MGamal</footer>
+       
+    </body>
+</html>
